@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Tattrie — Mechanical Engineer</title>
+    <meta name="description" content="Senior Mechanical Engineer specializing in robotics, hardware product development, and NPI. Currently at Roam Robotics.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#" class="nav-name">Nathan Tattrie</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="hero">
+        <h1>Nathan Tattrie</h1>
+        <p class="tagline">Senior Mechanical Engineer</p>
+        <p class="intro">I design, build, and ship hardware — from powered knee orthotics at Roam Robotics to exterior lighting on Ford vehicles. I specialize in taking products from concept through manufacturing, with deep experience in robotics, mechatronics, and NPI.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>I'm a mechanical engineer based in San Francisco with 5+ years of experience in hardware product development. My work spans the full lifecycle — design, prototyping, testing, and industrialization — with expertise in CAD, machine design, mechatronics, and DFM.</p>
+        <p>I'm driven by the challenge of turning complex engineering problems into reliable, shippable products. Whether it's building a pneumatic exoskeleton system or designing headlamps that meet automotive safety standards, I bring a relentless focus on getting the details right.</p>
+        <p>Outside of work, I'm a member of the Boys & Girls Club NextGen Council (helped raise $285k), and I hold ASA sailing licenses to charter catamarans worldwide.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Roam Robotics</h3>
+                <span class="experience-date">Feb 2021 — Present</span>
+            </div>
+            <p class="experience-role">Senior Mechanical NPI Engineer</p>
+            <p>Roam Robotics builds powered knee orthotics — lightweight lower-body exoskeletons that use pneumatic actuation to assist users with knee pain, injuries, or physically demanding jobs.</p>
+            <ul>
+                <li>Led NPI process to transform R&D prototype into an FDA-compliant Class 1 medical device</li>
+                <li>Redesigned the PowerPack from a backpack to a compact fanny-pack form factor, cutting weight by 37%</li>
+                <li>Reduced system noise from 85 dBa to 50 dBa through material selection and design changes</li>
+                <li>Improved ingress protection from IP22 to IP65 using gaskets, coatings, and resins</li>
+                <li>Designed thermal management solution extending runtime from 1 to 100+ hours</li>
+                <li>Sourced new compressor technology achieving 40% improvement in airflow output</li>
+                <li>Designed and conducted V&V testing per IEC requirements to enable FDA approval</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <h3>Ford Motor Company</h3>
+                <span class="experience-date">Aug 2019 — Jan 2021</span>
+            </div>
+            <p class="experience-role">Product Design Engineer, Exterior Lighting</p>
+            <p>Exterior lighting is one of the most challenging vehicle components — involving class A surfaces, electronics, EMC, optics, and environmental durability.</p>
+            <ul>
+                <li>Designed exterior lighting for the 2022 Expedition and F-150 Lightning, producing 37 unique assemblies</li>
+                <li>Managed the largest headlamp injection molding tool in Ford's lighting history</li>
+                <li>Integrated PCBs into lamp assemblies with full consideration for EMC, thermal limits, and harnessing</li>
+                <li>Oversaw DVP&R testing to guarantee performance through the part's lifecycle</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+            <article class="project-card">
+                <h3>Slim Power Pack</h3>
+                <p class="project-context">Roam Robotics</p>
+                <p>Redesigned Roam's PowerPack from scratch with only 8 months to design, test, and manufacture. The original demo pack was fragile, oversized, and ran hot enough to melt components off the PCBs.</p>
+                <ul>
+                    <li>Reduced weight from 15.4 lbs to 9.7 lbs (37% reduction)</li>
+                    <li>Used carbon fiber-reinforced 3D filament to meet drop, impact, and vibration requirements</li>
+                    <li>Achieved water ingress sealing with 2mm o-ring stock and sealing fasteners</li>
+                    <li>Maintained full airflow performance despite dramatic size reduction</li>
+                </ul>
+                <p class="project-result">Now the gold standard for what Roam's customers expect.</p>
+            </article>
+
+            <article class="project-card">
+                <h3>Compressor Investigation</h3>
+                <p class="project-context">Roam Robotics</p>
+                <p>Diagnosed and solved two interacting failure modes in a BLDC piston compressor: accumulator pressure leaking backward through reed valves causing idle "burp" cycles, and startup stalls from trapped cylinder pressure exceeding motor torque.</p>
+                <ul>
+                    <li>Redesigned reed valve plates to eliminate reverse leakage</li>
+                    <li>Built a custom pony-brake torque fixture to map stall torque vs. pressure</li>
+                    <li>Profiled motor constants across a statistically significant sample to rule out variability</li>
+                    <li>Implemented controlled vent path with GPIO-driven valves for pressure relief at idle</li>
+                </ul>
+                <p class="project-result">Eliminated backflow, reduced stalls, improved battery life and reliability.</p>
+            </article>
+
+            <article class="project-card">
+                <h3>2022 Expedition</h3>
+                <p class="project-context">Ford Motor Company</p>
+                <p>Owned the full headlamp and exterior lighting package for the 2022 Expedition across design, testing, and assembly phases — covering multiple lamp types across 3 vehicle trim levels. As of late 2025, an estimated 206,000 units have been sold.</p>
+                <ul>
+                    <li>Managed tooling for all injection molded lighting components</li>
+                    <li>Ensured IIHS Safety rating through reflectivity, illumination targets, and material selection</li>
+                    <li>Led environmental testing: ingress, thermal cycling, corrosion, UV degradation</li>
+                    <li>Resolved fit-and-finish issues with fascia, grille, tailgate, and sheet metal interfaces</li>
+                </ul>
+                <p class="project-result">Shipping on every 2022 Expedition produced.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>University of Michigan</h3>
+            <p>College of Engineering — May 2019</p>
+            <p>Bachelor of Science in Mechanical Engineering</p>
+            <p>Minor in Entrepreneurial Studies</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Interested in working together or want to chat about engineering?</p>
+        <div class="contact-links">
+            <a href="mailto:nrtattrie@gmail.com">nrtattrie@gmail.com</a>
+            <a href="https://linkedin.com/in/nathan-renn-tattrie" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Nathan Tattrie</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Personal reference documents
+reference_documents/
+
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store
