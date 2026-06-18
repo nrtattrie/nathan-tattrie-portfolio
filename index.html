@@ -10,7 +10,9 @@
     <meta property="og:title" content="Nathan Tattrie | Robotics Mechanical Engineering Portfolio">
     <meta property="og:description" content="Senior Mechanical Engineer specializing in robotics hardware, mechatronics, electromechanical systems, NPI, and validation.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/ProfilePic.jpeg">
+    <meta property="og:url" content="https://nrtattrie.github.io/nathan-tattrie-portfolio/">
+    <meta property="og:image" content="https://nrtattrie.github.io/nathan-tattrie-portfolio/images/ProfilePic.jpeg">
+    <link rel="canonical" href="https://nrtattrie.github.io/nathan-tattrie-portfolio/">
     <meta name="theme-color" content="#05070b">
 
     <!-- Favicon (inline SVG) -->
@@ -19,11 +21,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a href="#projects" class="skip-link">Skip to portfolio work</a>
+<a href="#work" class="skip-link">Skip to selected work</a>
 
 <header>
     <nav>
-        <a href="#" class="nav-name">Nathan Tattrie</a>
+        <a href="#hero" class="nav-name">Nathan Tattrie</a>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
@@ -31,11 +33,9 @@
         </button>
         <div class="nav-links">
             <a href="#about">About</a>
-            <a href="#fit">Fit</a>
+            <a href="#work">Work</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -50,7 +50,7 @@
                 <p class="tagline">Wearable robotics, mechatronics, validation, and prototype-to-production hardware.</p>
                 <p class="intro">I turn fragile prototypes into validated mechanical and electromechanical systems. My work spans powered knee orthotics at Roam Robotics, pneumatic actuation, compressor and enclosure development, NPI, design verification, and high-volume exterior lighting at Ford.</p>
                 <div class="hero-actions">
-                    <a href="#projects" class="resume-link primary-action">View Case Studies</a>
+                    <a href="#work" class="resume-link primary-action">View Selected Work</a>
                     <a href="assets/Nathan-Tattrie-Resume.pdf" class="resume-link" target="_blank" rel="noopener">Download Resume</a>
                 </div>
             </div>
@@ -65,8 +65,8 @@
         <p>The through-line is practical systems engineering: understand the physics, identify the risky interface, build the fixture or prototype that answers the question, and leave behind clean documentation for release.</p>
     </section>
 
-    <section id="fit" class="fade-in">
-        <h2>Target Role Fit</h2>
+    <section id="focus" class="fade-in">
+        <h2>Hardware Focus</h2>
         <div class="fit-grid">
             <div class="fit-card">
                 <h3>Mechanical Ownership</h3>
@@ -192,8 +192,8 @@
         </div>
     </section>
 
-    <section id="projects" class="fade-in">
-        <h2>Projects</h2>
+    <section id="work" class="fade-in">
+        <h2>Selected Work</h2>
         <div class="project-grid">
 
             <article class="project-card">
@@ -217,6 +217,11 @@
                 </div>
                 <h3>Slim Power Pack</h3>
                 <p class="project-context">Roam Robotics</p>
+                <div class="metric-list" aria-label="Project metrics">
+                    <span>15.4 lb to 9.7 lb</span>
+                    <span>Waist-worn system</span>
+                    <span>Airflow preserved</span>
+                </div>
                 <p>Redesigned Roam's pneumatic powerpack from a backpack-sized R&amp;D prototype into a waist-worn system containing the compressor, pressure reservoir, battery, electronics, plumbing, thermal management, and enclosure system.</p>
                 <ul>
                     <li>Reduced weight from 15.4 lb to 9.7 lb while preserving airflow performance</li>
@@ -238,6 +243,11 @@
                 </div>
                 <h3>Compressor Investigation</h3>
                 <p class="project-context">Roam Robotics</p>
+                <div class="metric-list" aria-label="Project metrics">
+                    <span>+80% airflow</span>
+                    <span>Backflow eliminated</span>
+                    <span>Stalls reduced</span>
+                </div>
                 <p>Diagnosed and solved two interacting failure modes in a BLDC piston compressor: accumulator pressure leaking backward through reed valves causing idle "burp" cycles, and startup stalls from trapped cylinder pressure exceeding motor torque.</p>
                 <ul>
                     <li>Redesigned reed valve plates to eliminate reverse leakage</li>
@@ -259,6 +269,11 @@
                 </div>
                 <h3>Powered Knee Orthosis Torque Fixture</h3>
                 <p class="project-context">Roam Robotics</p>
+                <div class="metric-list" aria-label="Project metrics">
+                    <span>Torque verified</span>
+                    <span>Adjustable angles</span>
+                    <span>Fixture qualified</span>
+                </div>
                 <p>Designed and qualified an adjustable test fixture to verify powered knee-joint torque output across discrete joint angles before external compliance testing.</p>
                 <ul>
                     <li>Translated a user need around knee-buckle prevention into flexion and extension torque requirements</li>
@@ -280,6 +295,11 @@
                 </div>
                 <h3>2022 Expedition Exterior Lighting</h3>
                 <p class="project-context">Ford Motor Company</p>
+                <div class="metric-list" aria-label="Project metrics">
+                    <span>200k+ vehicles</span>
+                    <span>DVP&amp;R release</span>
+                    <span>Supplier launch</span>
+                </div>
                 <p>Owned the mechanical design and release of exterior lighting systems for the 2022 Ford Expedition across design, validation, supplier coordination, assembly, and launch.</p>
                 <ul>
                     <li>Owned headlights, tail lamps, fog lamps, license plate lamps, CHMSL, and side mirror lamps across multiple vehicle packages</li>
@@ -306,6 +326,7 @@
     <section id="contact" class="fade-in">
         <h2>Contact</h2>
         <p>Interested in working together or want to chat about engineering?</p>
+        <p class="availability">Open to senior mechanical, mechatronics, and electromechanical hardware roles in robotics.</p>
         <div class="contact-links">
             <a href="mailto:nrtattrie@gmail.com">nrtattrie@gmail.com</a>
             <a href="https://linkedin.com/in/nathan-renn-tattrie" target="_blank" rel="noopener">LinkedIn</a>
