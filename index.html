@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Tattrie — Mechanical Engineer</title>
-    <meta name="description" content="Senior Mechanical Engineer specializing in robotics, hardware product development, and NPI. Currently at Roam Robotics.">
+    <title>Nathan Tattrie | Robotics Mechanical Engineering Portfolio</title>
+    <meta name="description" content="Senior Mechanical Engineer specializing in robotics hardware, mechatronics, electromechanical systems, NPI, validation, and prototype-to-production design.">
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Nathan Tattrie | Robotics Mechanical Engineering Portfolio">
+    <meta property="og:description" content="Senior Mechanical Engineer specializing in robotics hardware, mechatronics, electromechanical systems, NPI, and validation.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ProfilePic.jpeg">
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- Favicon (inline SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230d1117'/><text x='32' y='42' font-family='sans-serif' font-size='28' font-weight='700' fill='%2358a6ff' text-anchor='middle'>NT</text></svg>">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a href="#projects" class="skip-link">Skip to portfolio work</a>
 
 <header>
     <nav>
         <a href="#" class="nav-name">Nathan Tattrie</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="nav-links">
             <a href="#about">About</a>
+            <a href="#fit">Fit</a>
             <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
@@ -24,73 +43,199 @@
 
 <main>
     <section id="hero">
-        <h1>Nathan Tattrie</h1>
-        <p class="tagline">Senior Mechanical Engineer</p>
-        <p class="intro">I design, build, and ship hardware — from powered knee orthotics at Roam Robotics to exterior lighting on Ford vehicles. I specialize in taking products from concept through manufacturing, with deep experience in robotics, mechatronics, and NPI.</p>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="eyebrow">Senior Mechanical Engineer | Robotics Hardware | Electromechanical Systems</p>
+                <h1>Robotics hardware for real users.</h1>
+                <p class="tagline">Wearable robotics, mechatronics, validation, and prototype-to-production hardware.</p>
+                <p class="intro">I turn fragile prototypes into validated mechanical and electromechanical systems. My work spans powered knee orthotics at Roam Robotics, pneumatic actuation, compressor and enclosure development, NPI, design verification, and high-volume exterior lighting at Ford.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="resume-link primary-action">View Case Studies</a>
+                    <a href="assets/Nathan-Tattrie-Resume.pdf" class="resume-link" target="_blank" rel="noopener">Download Resume</a>
+                </div>
+            </div>
+            <img src="images/ProfilePic.jpeg" alt="Nathan Tattrie" class="hero-photo">
+        </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>About</h2>
-        <p>I'm a mechanical engineer based in San Francisco with 5+ years of experience in hardware product development. My work spans the full lifecycle — design, prototyping, testing, and industrialization — with expertise in CAD, machine design, mechatronics, and DFM.</p>
-        <p>I'm driven by the challenge of turning complex engineering problems into reliable, shippable products. Whether it's building a pneumatic exoskeleton system or designing headlamps that meet automotive safety standards, I bring a relentless focus on getting the details right.</p>
-        <p>Outside of work, I'm a member of the Boys & Girls Club NextGen Council (helped raise $285k), and I hold ASA sailing licenses to charter catamarans worldwide.</p>
+        <p>I'm a Senior Mechanical Engineer based in New York City with 6+ years of experience taking hardware from concept through validation, manufacturing readiness, and launch. My strongest lane is mechanical and electromechanical hardware for products that move around people.</p>
+        <p>At Roam Robotics, I work on wearable robotic and pneumatic systems, including powered knee orthosis hardware, compressor development, ruggedized powerpacks, validation fixtures, field testing, and NPI documentation. Before Roam, I owned exterior lighting design and release at Ford, where production discipline meant GD&amp;T, tooling, DVP&amp;R, suppliers, and launch readiness had to hold up at vehicle scale.</p>
+        <p>The through-line is practical systems engineering: understand the physics, identify the risky interface, build the fixture or prototype that answers the question, and leave behind clean documentation for release.</p>
     </section>
 
-    <section id="experience">
+    <section id="fit" class="fade-in">
+        <h2>Target Role Fit</h2>
+        <div class="fit-grid">
+            <div class="fit-card">
+                <h3>Mechanical Ownership</h3>
+                <p>Concept, CAD, interfaces, enclosure strategy, tolerance logic, BOMs, ECO/DCO release, and manufacturing handoff.</p>
+            </div>
+            <div class="fit-card">
+                <h3>Mechatronics Judgment</h3>
+                <p>Pneumatics, BLDC startup behavior, pressure relief, electronics packaging, sensors, and controls-facing tradeoffs.</p>
+            </div>
+            <div class="fit-card">
+                <h3>Validation Backbone</h3>
+                <p>Fixture design, free-body reasoning, torque and pressure characterization, DFMEA, test matrices, calibration, and qualification records.</p>
+            </div>
+            <div class="fit-card">
+                <h3>Real-World Users</h3>
+                <p>Wearability, weight, noise, sealing, impact, thermal behavior, field feedback, and product readiness.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="fade-in">
         <h2>Experience</h2>
 
         <div class="experience-item">
             <div class="experience-header">
                 <h3>Roam Robotics</h3>
-                <span class="experience-date">Feb 2021 — Present</span>
+                <span class="experience-date">Feb 2021 - Present</span>
             </div>
             <p class="experience-role">Senior Mechanical NPI Engineer</p>
-            <p>Roam Robotics builds powered knee orthotics — lightweight lower-body exoskeletons that use pneumatic actuation to assist users with knee pain, injuries, or physically demanding jobs.</p>
+            <div class="experience-images">
+                <img src="images/RoamMedical2.png" alt="Roam Robotics powered knee orthotic system showing responsive intelligence, air support, and active sensing" loading="lazy" style="flex-grow: 0.576">
+                <img src="images/RoamPerformance1.png" alt="Military user wearing Roam Robotics exoskeleton in the field" loading="lazy" style="flex-grow: 0.873">
+            </div>
+            <p>Roam Robotics builds powered knee orthotics: lightweight lower-body wearable robotic systems that use pneumatic actuation to assist users with knee pain, injuries, rehabilitation needs, or physically demanding jobs.</p>
             <ul>
-                <li>Led NPI process to transform R&D prototype into an FDA-compliant Class 1 medical device</li>
-                <li>Redesigned the PowerPack from a backpack to a compact fanny-pack form factor, cutting weight by 37%</li>
-                <li>Reduced system noise from 85 dBa to 50 dBa through material selection and design changes</li>
-                <li>Improved ingress protection from IP22 to IP65 using gaskets, coatings, and resins</li>
-                <li>Designed thermal management solution extending runtime from 1 to 100+ hours</li>
-                <li>Sourced new compressor technology achieving 40% improvement in airflow output</li>
-                <li>Designed and conducted V&V testing per IEC requirements to enable FDA approval</li>
+                <li>Led mechanical design and performance ownership for wearable robotic and pneumatic electromechanical systems from R&amp;D prototypes toward medical-device and ruggedized hardware readiness</li>
+                <li>Developed powered knee orthosis hardware with single-axis pneumatic actuation and torque transfer analysis across thigh, knee, and ankle interfaces</li>
+                <li>Redesigned the PowerPack from a backpack-sized prototype to a waist-worn system, reducing weight from 15.4 lb to 9.7 lb while preserving airflow performance</li>
+                <li>Led compressor development across leakage diagnosis, reed valve redesign, startup torque characterization, pressure relief strategy, and controls-facing validation, improving airflow output by 80%</li>
+                <li>Improved field robustness through sealed enclosures, conformal coatings, softgoods integration, thermal management, and acoustic design, enabling IK08 impact and IP57 ingress protection performance while reducing noise from 85 dBA to 60 dBA</li>
+                <li>Authored PRD, ERD, DFMEA, test matrix, manufacturing process instructions, end-of-line tests, calibration records, and fixture IQ/OQ/PQ documentation in Arena PLM</li>
             </ul>
         </div>
 
         <div class="experience-item">
             <div class="experience-header">
                 <h3>Ford Motor Company</h3>
-                <span class="experience-date">Aug 2019 — Jan 2021</span>
+                <span class="experience-date">Aug 2019 - Jan 2021</span>
             </div>
             <p class="experience-role">Product Design Engineer, Exterior Lighting</p>
-            <p>Exterior lighting is one of the most challenging vehicle components — involving class A surfaces, electronics, EMC, optics, and environmental durability.</p>
+            <div class="experience-images">
+                <img src="images/AchiecementAward.PNG" alt="Ford North America Engineering Recognition and Achievement Award" loading="lazy">
+                <img src="images/BuiltFordToughRecognition.png" alt="Built Ford Tough recognition award" loading="lazy">
+            </div>
+            <p>Exterior lighting is one of the most interface-heavy vehicle systems: class A surfaces, electronics, EMC, optics, thermal constraints, environmental durability, tooling, and assembly all have to work together.</p>
             <ul>
-                <li>Designed exterior lighting for the 2022 Expedition and F-150 Lightning, producing 37 unique assemblies</li>
-                <li>Managed the largest headlamp injection molding tool in Ford's lighting history</li>
-                <li>Integrated PCBs into lamp assemblies with full consideration for EMC, thermal limits, and harnessing</li>
-                <li>Oversaw DVP&R testing to guarantee performance through the part's lifecycle</li>
+                <li>Owned mechanical design and release of exterior lighting systems for the 2022 Expedition across headlights, tail lamps, fog lamps, license plate lamps, CHMSL, and side mirror lamps</li>
+                <li>Resolved out-of-spec body-to-lamp gaps by coordinating tolerance changes across lighting housings and adjacent sheet metal/fascia interfaces</li>
+                <li>Integrated circuitry into production lamp designs while accounting for EMC, worst-case circuit analysis, LED and electronics thermal constraints, harness interfaces, environmental durability, and assembly requirements</li>
+                <li>Partnered with Tier 1 suppliers in Asia and North America on tooling, DFM, validation strategy, PPAP readiness, and production release</li>
             </ul>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <div class="skills-group">
+            <h3>Mechanical / Robotics</h3>
+            <div class="skills-list">
+                <span class="skill-pill">SolidWorks</span>
+                <span class="skill-pill">Electromechanical Design</span>
+                <span class="skill-pill">Wearable Robotics</span>
+                <span class="skill-pill">Pneumatic Actuation</span>
+                <span class="skill-pill">Mechanism Packaging</span>
+                <span class="skill-pill">Torque Analysis</span>
+                <span class="skill-pill">Ruggedization</span>
+            </div>
+        </div>
+        <div class="skills-group">
+            <h3>CAD / Quality</h3>
+            <div class="skills-list">
+                <span class="skill-pill">GD&amp;T</span>
+                <span class="skill-pill">Tolerance Analysis</span>
+                <span class="skill-pill">DFMEA</span>
+                <span class="skill-pill">DVP&amp;R</span>
+                <span class="skill-pill">FEA</span>
+                <span class="skill-pill">Arena PLM</span>
+                <span class="skill-pill">ECO/DCO</span>
+            </div>
+        </div>
+        <div class="skills-group">
+            <h3>Validation / Test</h3>
+            <div class="skills-list">
+                <span class="skill-pill">Design Verification</span>
+                <span class="skill-pill">Test Fixtures</span>
+                <span class="skill-pill">Force/Torque Measurement</span>
+                <span class="skill-pill">Pressure Characterization</span>
+                <span class="skill-pill">Root Cause Analysis</span>
+                <span class="skill-pill">Fixture IQ/OQ/PQ</span>
+            </div>
+        </div>
+        <div class="skills-group">
+            <h3>Manufacturing</h3>
+            <div class="skills-list">
+                <span class="skill-pill">DFM/DFA</span>
+                <span class="skill-pill">Machined Parts</span>
+                <span class="skill-pill">Injection Molding</span>
+                <span class="skill-pill">Softgoods Integration</span>
+                <span class="skill-pill">Supplier Coordination</span>
+                <span class="skill-pill">3D Printing</span>
+                <span class="skill-pill">Mill</span>
+                <span class="skill-pill">Lathe</span>
+            </div>
+        </div>
+        <div class="skills-group">
+            <h3>Software</h3>
+            <div class="skills-list">
+                <span class="skill-pill">MATLAB</span>
+                <span class="skill-pill">C++</span>
+                <span class="skill-pill">Basic Python</span>
+                <span class="skill-pill">PDM</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
         <h2>Projects</h2>
         <div class="project-grid">
 
             <article class="project-card">
+                <div class="project-images pack-comparison">
+                    <figure style="flex-grow: 0.734">
+                        <img src="images/RoamPerformancePackSide.png" alt="Original PowerPack side view" loading="lazy">
+                        <figcaption>Before</figcaption>
+                    </figure>
+                    <figure style="flex-grow: 0.831">
+                        <img src="images/RoamPerformancePackBack.png" alt="Original PowerPack back view" loading="lazy">
+                        <figcaption>Before</figcaption>
+                    </figure>
+                    <figure style="flex-grow: 0.831">
+                        <img src="images/RoamSlimPackBack.png" alt="Slim Power Pack back view" loading="lazy">
+                        <figcaption>After</figcaption>
+                    </figure>
+                    <figure style="flex-grow: 0.739">
+                        <img src="images/RoamSlimPackSide.png" alt="Slim Power Pack side view" loading="lazy">
+                        <figcaption>After</figcaption>
+                    </figure>
+                </div>
                 <h3>Slim Power Pack</h3>
                 <p class="project-context">Roam Robotics</p>
-                <p>Redesigned Roam's PowerPack from scratch with only 8 months to design, test, and manufacture. The original demo pack was fragile, oversized, and ran hot enough to melt components off the PCBs.</p>
+                <p>Redesigned Roam's pneumatic powerpack from a backpack-sized R&amp;D prototype into a waist-worn system containing the compressor, pressure reservoir, battery, electronics, plumbing, thermal management, and enclosure system.</p>
                 <ul>
-                    <li>Reduced weight from 15.4 lbs to 9.7 lbs (37% reduction)</li>
-                    <li>Used carbon fiber-reinforced 3D filament to meet drop, impact, and vibration requirements</li>
-                    <li>Achieved water ingress sealing with 2mm o-ring stock and sealing fasteners</li>
-                    <li>Maintained full airflow performance despite dramatic size reduction</li>
+                    <li>Reduced weight from 15.4 lb to 9.7 lb while preserving airflow performance</li>
+                    <li>Repackaged compressor, reservoir, battery, electronics, pneumatic routing, and thermal components around wearable ergonomics</li>
+                    <li>Specified enclosure walls, ribbing, sealing fasteners, O-ring stock, and connector changes to support field durability</li>
+                    <li>Balanced mechanical packaging, heat, water ingress, serviceability, airflow, and user comfort under aggressive timing</li>
                 </ul>
-                <p class="project-result">Now the gold standard for what Roam's customers expect.</p>
+                <p class="project-result">Established the customer-expected powerpack form without sacrificing core pneumatic performance.</p>
             </article>
 
             <article class="project-card">
+                <div class="project-images stacked">
+                    <figure>
+                        <img src="images/RoamMotorControl2.png" alt="Electrical and mechanical motor model used for compressor analysis" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="images/RoamMotorControl1.png" alt="Compressor waveform analysis showing motor characterization data" loading="lazy">
+                    </figure>
+                </div>
                 <h3>Compressor Investigation</h3>
                 <p class="project-context">Roam Robotics</p>
                 <p>Diagnosed and solved two interacting failure modes in a BLDC piston compressor: accumulator pressure leaking backward through reed valves causing idle "burp" cycles, and startup stalls from trapped cylinder pressure exceeding motor torque.</p>
@@ -98,50 +243,81 @@
                     <li>Redesigned reed valve plates to eliminate reverse leakage</li>
                     <li>Built a custom pony-brake torque fixture to map stall torque vs. pressure</li>
                     <li>Profiled motor constants across a statistically significant sample to rule out variability</li>
-                    <li>Implemented controlled vent path with GPIO-driven valves for pressure relief at idle</li>
+                    <li>Validated pressure relief and startup-current mitigation paths to reduce stalls without reintroducing leakage</li>
                 </ul>
-                <p class="project-result">Eliminated backflow, reduced stalls, improved battery life and reliability.</p>
+                <p class="project-result">Improved airflow output by 80%, eliminated backflow, reduced high-pressure stalls, and created a reusable compressor characterization workflow.</p>
             </article>
 
             <article class="project-card">
-                <h3>2022 Expedition</h3>
-                <p class="project-context">Ford Motor Company</p>
-                <p>Owned the full headlamp and exterior lighting package for the 2022 Expedition across design, testing, and assembly phases — covering multiple lamp types across 3 vehicle trim levels. As of late 2025, an estimated 206,000 units have been sold.</p>
+                <div class="project-images">
+                    <figure style="flex-grow: 1.494">
+                        <img src="images/RoamMedical1.png" alt="Roam powered knee orthosis product imagery" loading="lazy">
+                    </figure>
+                    <figure style="flex-grow: 0.576">
+                        <img src="images/RoamMedical2.png" alt="Roam powered knee orthosis features and sensing overview" loading="lazy">
+                    </figure>
+                </div>
+                <h3>Powered Knee Orthosis Torque Fixture</h3>
+                <p class="project-context">Roam Robotics</p>
+                <p>Designed and qualified an adjustable test fixture to verify powered knee-joint torque output across discrete joint angles before external compliance testing.</p>
                 <ul>
-                    <li>Managed tooling for all injection molded lighting components</li>
-                    <li>Ensured IIHS Safety rating through reflectivity, illumination targets, and material selection</li>
-                    <li>Led environmental testing: ingress, thermal cycling, corrosion, UV degradation</li>
-                    <li>Resolved fit-and-finish issues with fascia, grille, tailgate, and sheet metal interfaces</li>
+                    <li>Translated a user need around knee-buckle prevention into flexion and extension torque requirements</li>
+                    <li>Used free-body analysis and CAD geometry to convert measured force into joint torque</li>
+                    <li>Designed a rotating machined mount on a rigid frame to secure left and right joints at multiple angles</li>
+                    <li>Improved fixture alignment during qualification so force vectors matched the intended test model</li>
                 </ul>
-                <p class="project-result">Shipping on every 2022 Expedition produced.</p>
+                <p class="project-result">Produced torque data showing the joint met defined support requirements at target angles.</p>
+            </article>
+
+            <article class="project-card">
+                <div class="project-images">
+                    <figure style="flex-grow: 1.55">
+                        <img src="images/FordExpeditionFront.png" alt="2022 Ford Expedition front headlamp design by Nathan Tattrie" loading="lazy">
+                    </figure>
+                    <figure style="flex-grow: 1.818">
+                        <img src="images/FordF150LighteningRunningBoard.png" alt="F-150 Lightning running board lamp illuminating ground" loading="lazy">
+                    </figure>
+                </div>
+                <h3>2022 Expedition Exterior Lighting</h3>
+                <p class="project-context">Ford Motor Company</p>
+                <p>Owned the mechanical design and release of exterior lighting systems for the 2022 Ford Expedition across design, validation, supplier coordination, assembly, and launch.</p>
+                <ul>
+                    <li>Owned headlights, tail lamps, fog lamps, license plate lamps, CHMSL, and side mirror lamps across multiple vehicle packages</li>
+                    <li>Coordinated interfaces to harnessing, sheet metal, fascia, grille, tailgate, optics, electrical, studio, vehicle integration, and suppliers</li>
+                    <li>Resolved body-to-lamp gap issues by coordinating tolerance changes across lighting housings and adjacent interfaces</li>
+                    <li>Used CAD, GD&amp;T, DFMEA/FMA, DVP&amp;R, CAE, and physical testing to support production release</li>
+                </ul>
+                <p class="project-result">Production-scale hardware proof from a program that exceeded 200,000 vehicle sales.</p>
             </article>
 
         </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="fade-in">
         <h2>Education</h2>
         <div class="education-item">
             <h3>University of Michigan</h3>
-            <p>College of Engineering — May 2019</p>
+            <p>College of Engineering - May 2019</p>
             <p>Bachelor of Science in Mechanical Engineering</p>
             <p>Minor in Entrepreneurial Studies</p>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <h2>Contact</h2>
         <p>Interested in working together or want to chat about engineering?</p>
         <div class="contact-links">
             <a href="mailto:nrtattrie@gmail.com">nrtattrie@gmail.com</a>
             <a href="https://linkedin.com/in/nathan-renn-tattrie" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="assets/Nathan-Tattrie-Resume.pdf" target="_blank" rel="noopener">Resume</a>
         </div>
     </section>
 </main>
 
 <footer>
-    <p>&copy; 2025 Nathan Tattrie</p>
+    <p>&copy; <span id="year"></span> Nathan Tattrie</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
