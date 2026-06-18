@@ -1,14 +1,17 @@
 :root {
-    --bg: #f7f5ef;
-    --bg-card: #ffffff;
-    --text: #18201f;
-    --text-muted: #5d6864;
-    --accent: #0f766e;
-    --accent-hover: #0b4f4a;
-    --warm: #c65f46;
-    --signal: #d9a21b;
-    --border: #d9d5c8;
-    --shadow: 0 20px 60px rgba(24, 32, 31, 0.1);
+    --bg: #05070b;
+    --bg-deep: #010204;
+    --bg-card: rgba(255, 255, 255, 0.06);
+    --bg-card-strong: rgba(255, 255, 255, 0.1);
+    --text: #f5f7fb;
+    --text-muted: #9aa4b2;
+    --text-soft: #c6d0dc;
+    --accent: #64d2ff;
+    --accent-hover: #8fdcff;
+    --focus: #0a84ff;
+    --border: rgba(255, 255, 255, 0.12);
+    --border-strong: rgba(100, 210, 255, 0.32);
+    --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
 }
 
 * {
@@ -23,10 +26,14 @@ html {
 }
 
 body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:
+        linear-gradient(180deg, rgba(100, 210, 255, 0.1), transparent 34rem),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 24rem),
+        var(--bg);
     color: var(--text);
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 a {
@@ -39,6 +46,12 @@ a:hover {
     color: var(--accent-hover);
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+}
+
 .skip-link {
     position: fixed;
     left: 1rem;
@@ -46,7 +59,7 @@ a:hover {
     z-index: 200;
     transform: translateY(-150%);
     background: var(--text);
-    color: var(--bg-card);
+    color: var(--bg);
     padding: 0.75rem 1rem;
     border-radius: 8px;
 }
@@ -61,9 +74,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(247, 245, 239, 0.92);
+    background: rgba(5, 7, 11, 0.72);
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(100, 210, 255, 0.16);
     z-index: 100;
 }
 
@@ -84,7 +97,7 @@ nav {
 }
 
 .nav-name:hover {
-    color: var(--accent);
+    color: var(--accent-hover);
 }
 
 .nav-links {
@@ -99,11 +112,11 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--text);
+    color: var(--accent-hover);
 }
 
 .nav-links a.active {
-    color: var(--text);
+    color: var(--accent);
 }
 
 /* --- Hamburger toggle --- */
@@ -188,7 +201,10 @@ h3 {
 .hero-photo {
     width: 200px;
     border-radius: 50%;
-    border: 3px solid var(--border);
+    border: 1px solid var(--border-strong);
+    box-shadow:
+        0 0 0 10px rgba(255, 255, 255, 0.04),
+        0 24px 60px rgba(0, 0, 0, 0.36);
     flex-shrink: 0;
 }
 
@@ -253,7 +269,8 @@ h3 {
     border: 1px solid var(--border);
     border-radius: 8px;
     background: var(--bg-card);
-    box-shadow: 0 8px 24px rgba(24, 32, 31, 0.05);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(18px);
 }
 
 .fit-card h3 {
@@ -279,7 +296,8 @@ h3 {
     height: auto;
     border-radius: 6px;
     border: 1px solid var(--border);
-    background: var(--bg-card);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
 }
 
 .experience-item {
@@ -349,6 +367,7 @@ h3 {
     font-size: 0.85rem;
     color: var(--text);
     background: var(--bg-card);
+    backdrop-filter: blur(12px);
 }
 
 /* --- Resume link --- */
@@ -365,14 +384,15 @@ h3 {
 
 .resume-link:hover {
     background: var(--accent);
-    color: var(--bg-card);
+    color: var(--bg);
     transform: translateY(-1px);
 }
 
 .resume-link.primary-action {
-    background: var(--text);
-    border-color: var(--text);
-    color: var(--bg-card);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    box-shadow: 0 14px 32px rgba(100, 210, 255, 0.18);
 }
 
 /* --- Projects --- */
@@ -389,6 +409,7 @@ h3 {
     padding: 1.75rem;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
+    backdrop-filter: blur(18px);
 }
 
 .project-card:hover {
@@ -401,6 +422,8 @@ h3 {
     gap: 0.75rem;
     margin: -1.75rem -1.75rem 1.25rem -1.75rem;
     padding: 0;
+    background: rgba(255, 255, 255, 0.035);
+    border-bottom: 1px solid var(--border);
 }
 
 .project-images figure {
@@ -413,14 +436,15 @@ h3 {
 .project-images img {
     width: 100%;
     display: block;
+    background: var(--bg-deep);
 }
 
 .project-images figcaption {
     position: absolute;
     bottom: 0.5rem;
     left: 0.5rem;
-    background: rgba(24, 32, 31, 0.86);
-    color: #ffffff;
+    background: rgba(5, 7, 11, 0.86);
+    color: var(--text);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -465,7 +489,7 @@ h3 {
 
 .project-result {
     font-weight: 500;
-    color: var(--text);
+    color: var(--accent-hover);
     font-style: italic;
 }
 
@@ -550,7 +574,7 @@ footer {
         left: 0;
         right: 0;
         flex-direction: column;
-        background: rgba(247, 245, 239, 0.98);
+        background: rgba(5, 7, 11, 0.96);
         backdrop-filter: blur(16px);
         padding: 1rem 1.5rem;
         gap: 1rem;
